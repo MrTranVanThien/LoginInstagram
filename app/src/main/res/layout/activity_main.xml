@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:src="@drawable/Instagram_login"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="175dp" />
+
+    <TextView
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:text="Đăng nhập"
+        android:maxLines="3"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_height="wrap_content" />
+
+    <!--
+    Width : chieu rong
+    height : chieu cao
+    text : noi dung hien thi cua textview
+    textsize : Cỡ chữ
+    lines : so dong cua text view
+    maxlines : so dong toi da cua textview
+
+    gravity : Căn chỉnh textview
+    gravity_layout : can chinh layout textview
+
+    textStyle:(bold, italic, normal)
+
+    Buttom de bat su kien click : login , logout ...
+    Default la chu in hoa
+    Muon la chu thuong thi su dung textAllCaps
+
+    -->
+
+    <TextView
+        android:textSize="15sp"
+        android:text="Instagram"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:hint="Tên đăng nhập"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:text="Đăng nhập"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+    <!--background nen
+        scaleType :
+        center : giu nguyen kich thuoc
+        fitXY thi scale theo 2 chieu, giong background
+    src : giu nguyen kich thuoc anh-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/Instagram_login" />
+</LinearLayout>
